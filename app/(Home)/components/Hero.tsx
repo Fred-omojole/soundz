@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="h-auto">
+    <section className="mb-40">
       <div className="flex items-center justify-center h-[600px]">
         <Image
           className="object-cover h-full "
