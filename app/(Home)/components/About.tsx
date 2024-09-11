@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section>
+    <section className=" overflow-hidden">
       <div className="container w-[52vw] mx-auto flex flex-col gap-3 mb-28">
         <div className="text-2xl tracking wider font-semibold  leading-relaxed ">
           Making music isn’t easy. It takes time, effort, and learning. But when
@@ -43,6 +43,7 @@ const About = () => {
         <div className="bg-[#B6FFC0] flex flex-col gap-16 items-center justify-center ">
           <div className="flex flex-col gap-20">
             <Image
+             className="rounded-lg"
               src="/images/stuff.jpg"
               width={600}
               height={400}
@@ -50,6 +51,7 @@ const About = () => {
             />
 
             <Image
+             className="rounded-lg"
               src="/images/heroo.png"
               width={600}
               height={400}
@@ -62,7 +64,7 @@ const About = () => {
         </div>
         <div className="flex items-center justify-between ">
           <Image
-            className=" relative right-10 h-[650px]"
+            className=" relative right-10 h-[650px] rounded-lg"
             src="/images/shout.jpg"
             alt="shout"
             width={600}

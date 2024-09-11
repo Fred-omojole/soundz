@@ -1,11 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 const Header = () => {
   // const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
+  // const [active, setActive] = useState(false);
+  const [fixed, setFixed] = useState(false);
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setFixed(scrollY > 100);
+      setHidden(scrollY > 800);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   interface MoreListProps {
     name: string;
@@ -80,7 +97,7 @@ const Header = () => {
   return (
     <>
       {" "}
-      <header className="border-b-zinc-300 border-b-[2px]">
+      <header className="border-b-zinc-300 border-b-[2px]  overflow-hidden">
         <div className="py-2 px-6">
           <div className="flex items-center gap-8">
             {" "}
@@ -155,7 +172,15 @@ const Header = () => {
           )}
         </div>
       </header>
-      <div className=" ml-6 text-sm font-semibold flex items-center gap-4">
+      <div
+        className={`px-4 text-sm font-semibold flex items-center gap-4 transition-all ease-in-out  duration-200  ${
+          fixed
+            ? "fixed top-0 left-0 w-full bg-transparent backdrop-blur-md z-10 py-3 transition-all ease-in-out  duration-200 "
+            : ""
+        } ${
+          hidden ? "opacity-0 transition-opacity duration-500" : "opacity-100"
+        }`}
+      >
         {extraList.map((list, index) => {
           return (
             <p className="capitalize py-4" key={index}>

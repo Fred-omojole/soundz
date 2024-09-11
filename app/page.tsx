@@ -8,12 +8,12 @@ import Product from "./(Home)/components/Product";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="">
       <Header />
       <Hero />
       <About />
-      <Product/>
-      <Footer/>
+      <Product />
+      <Footer />
     </main>
   );
 }

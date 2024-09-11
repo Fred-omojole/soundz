@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Product = () => {
   return (
-    <section className="mt-28">
+    <section className="mt-28 overflow-hidden">
       <div className="container mx-auto w-[52vw]  flex flex-col gap-3 mb-20">
         <div className="text-2xl font-semibold leading-loose">
           We believe it takes focus to create truly outstanding instruments. We
@@ -52,28 +52,25 @@ const Product = () => {
       </div>
 
       <div className=" flex items-center justify-center h-[100vh]  mt-20">
-        <div className=" absolute w-[68vw] h-[100vh] bg-[#d5b3ff] flex items-center justify-center">
-          <div className="relative right-20">
-            {" "}
-            <Image
-              className="rounded-lg "
-              src="/images/jocker.jpg"
-              alt="jocker"
-              width={800}
-              height={700}
-            />
-          </div>
-
-          <div className="relative left-72">
-            {" "}
-            <Image
-              className="h-[600px] rounded-lg "
-              src="/images/bucket.jpg"
-              alt="jocker"
-              width={900}
-              height={700}
-            />
-          </div>
+        <div className="  w-[68vw] h-[100vh] bg-[#d5b3ff] flex gap-20 items-center justify-center">
+          {/* <div className=""> */}{" "}
+          <Image
+            className="rounded-lg "
+            src="/images/jocker.jpg"
+            alt="jocker"
+            width={400}
+            height={400}
+          />
+          {/* </div> */}
+          {/* <div className=""> */}{" "}
+          <Image
+            className="h-[600px] rounded-lg  "
+            src="/images/bucket.jpg"
+            alt="jocker"
+            width={700}
+            height={700}
+          />
+          {/* </div> */}
         </div>
       </div>
 
@@ -94,7 +91,7 @@ const Product = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 mx-auto h-[90vh] px-20 py-10 rounded-lg mt-20 mb-20">
+      <div className="grid grid-cols-2 mx-auto  px-20 py-10 rounded-lg mt-20 ">
         <div className="rounded-l-lg object-cover">
           <Image
             className="object-cover w-full rounded-l-lg"
@@ -105,23 +102,22 @@ const Product = () => {
           />
         </div>
         <div className="bg-[#b1c5ff] rounded-r-lg flex flex-col gap-4 items-center justify-center">
-          <div className="text-2xl font-semibold  leading-loose tracking-wide flex items-center justify-center w-[30vw]">
+          <div className="text-4xl font-semibold  leading-loose tracking-wide flex items-center justify-center w-[30vw]">
             We&apos;re really proud of the work we&apos;ve done so far. But
             there&apos;s so much more to come. If you&apos;d like to be a part
             of it, please join us.
           </div>
-          <p className="text-[#0000ff] font-semibold text-start w-[30vw] text-2xl flex items-center ">
+          <p className="text-[#0000ff] font-semibold text-start w-[30vw] text-3xl flex items-center ">
             {" "}
             See latest jobs{" "}
             <span className="text-[#0000ff] font-semibold">
-              <IoIosArrowForward className="text-2xl font-semibold"/>
+              <IoIosArrowForward className="text-2xl font-semibold" />
             </span>{" "}
           </p>
         </div>
       </div>
 
-
-      
+     
     </section>
   );
 };

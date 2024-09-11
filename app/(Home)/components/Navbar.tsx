@@ -52,7 +52,7 @@ function Navbar({ containerStyle, linkStyle, onShow, setShow }: Props) {
               </div>
             );
           })}{" "}
-          <div className="flex flex-grow w-96 mx-6 py-3"></div>
+          <div className="flex flex-grow w-80 mx-6 py-3"></div>
           {/* <div className="flex items-center gap-6"> */}
           <ul className="flex items-center gap-6 cursor-pointer">
             <li className="text-blue-600 font-semibold">

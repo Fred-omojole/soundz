@@ -3,10 +3,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="mb-40">
+    <section className="mb-40  overflow-hidden">
       <div className="flex items-center justify-center h-[600px]">
         <Image
-          className="object-cover h-full rounded-lg"
+          className="object-cover h-full rounded-lg "
           src="/images/william.png"
           width={1200}
           height={600}
@@ -33,7 +33,7 @@ const Hero = () => {
       <div className=" grid grid-cols-2 ">
         <div className="flex items-center justify-center ">
           <Image
-            className="relative left-40 object-cover h-[600px]"
+            className="relative left-40 object-cover h-[600px] rounded-lg"
             src="/images/book.jpg"
             alt="book"
             width={590}
@@ -43,6 +43,7 @@ const Hero = () => {
         <div className="bg-[#FBFFA7]  w-full h-[100vh]">
           <div className="flex items-center justify-center h-full ml-5">
             <Image
+            className="rounded-lg"
               alt="ground"
               src="/images/ground.jpg"
               width={500}
