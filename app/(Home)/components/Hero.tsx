@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="mb-40">
       <div className="flex items-center justify-center h-[600px]">
         <Image
-          className="object-cover h-full "
+          className="object-cover h-full rounded-lg"
           src="/images/william.png"
           width={1200}
           height={600}

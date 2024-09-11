@@ -39,7 +39,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 h-[150vh] mt-20">
+      <div className="grid grid-cols-2 h-[150vh] mt-28">
         <div className="bg-[#B6FFC0] flex flex-col gap-16 items-center justify-center ">
           <div className="flex flex-col gap-20">
             <Image
