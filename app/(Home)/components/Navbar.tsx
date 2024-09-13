@@ -13,10 +13,8 @@ interface Props {
 }
 
 function Navbar({ containerStyle, linkStyle, onShow, setShow }: Props) {
-  
-
   const navRoutes: navRouteProps[] = [
-    { name: "live"},
+    { name: "live" },
     { name: " push" },
     { name: "note" },
     { name: "link" },
@@ -31,8 +29,7 @@ function Navbar({ containerStyle, linkStyle, onShow, setShow }: Props) {
 
   return (
     <section>
-      <nav className={`${containerStyle}`}>
-        
+      <nav className={`${containerStyle}w-full flex-nowrap`}>
         <>
           {" "}
           {navRoutes.map((route, index) => {
@@ -52,15 +49,18 @@ function Navbar({ containerStyle, linkStyle, onShow, setShow }: Props) {
               </div>
             );
           })}{" "}
-          <div className="flex flex-grow w-80 mx-6 py-3"></div>
+          {/* <div className="w-60 py-2 mx- "></div> */}
           {/* <div className="flex items-center gap-6"> */}
-          <ul className="flex items-center gap-6 cursor-pointer">
-            <li className="text-blue-600 font-semibold">
-              Try Live 12 for free
-            </li>
-            <li className="font-medium text-sm">log in or register</li>
-          </ul>
-        
+          <div className="w-full flex justify-end">
+            <ul className="flex items-center text-base w-30  lg:gap-4  xl:gap-6  cursor-pointer flex-nowrap">
+              <li className="text-blue-600 font-semibold flex-nowrap  ">
+                Try Live 12 for free
+              </li>
+              <li className="font-medium text-md flex-nowrap">
+                log in or register
+              </li>
+            </ul>
+          </div>
         </>
       </nav>
     </section>
