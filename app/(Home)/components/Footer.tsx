@@ -105,7 +105,9 @@ const Footer = () => {
       <div className="flex items-center justify-between px-10 text-zinc-600   ">
         <h1>
           Development by{" "}
-          <span className="underline underline-offset-2  transform">Fred-Omojole</span>
+          <span className="underline underline-offset-2  transform">
+            <a href="https://portfolio-t1.vercel.app/">Fred-Omojole</a>
+          </span>
         </h1>
 
         <h1 className="flex items-center gap-1">

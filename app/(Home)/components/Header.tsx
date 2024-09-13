@@ -121,7 +121,7 @@ const Header = () => {
               onShow={show}
               setShow={setShow}
               containerStyle="flex items-center gap-8 "
-              linkStyle="capitalize font-semibold text-lg cursor-pointer"
+              linkStyle="capitalize font-semibold text-lg cursor-pointer hover:text-orange-400 transition-all duration-300 ease-in-out"
             />
           </div>
         </div>
@@ -138,7 +138,10 @@ const Header = () => {
                 <div className="flex mt-4 items-center gap-6">
                   {moreLists.map((list, index) => {
                     return (
-                      <div className="cursor-pointer" key={index}>
+                      <div
+                        className="cursor-pointer  hover:text-orange-400 transition-all duration-300 ease-in-out"
+                        key={index}
+                      >
                         {index === moreLists.length - 3 ? (
                           <span className="text-orange-400 ">{list.name}</span>
                         ) : (
@@ -153,13 +156,15 @@ const Header = () => {
                 {" "}
                 More from Soundz:{" "}
               </h1>
-              <div className="ml-6 m-4 mb-16 gap-8 grid grid-cols-4">
+              <div className="ml-6 m-4 mb-16 gap-8 grid grid-cols-4 ">
                 {aboutLists.map((list, index) => {
                   return (
                     <>
                       <div key={index} className="capitalize cursor-pointer">
                         <div className="mb-2">
-                          <h1 className="font-semibold">{list.name}</h1>
+                          <h1 className="font-semibold  hover:text-orange-400 transition-all duration-300 ease-in-out">
+                            {list.name}
+                          </h1>
                         </div>
                         {/* <div> */} <p>{list.label}</p>
                         {/* </div> */}
@@ -175,7 +180,7 @@ const Header = () => {
       <div
         className={`px-4 text-sm font-semibold flex items-center gap-4 transition-all ease-in-out  duration-200  ${
           fixed
-            ? "fixed top-0 left-0 w-full bg-transparent backdrop-blur-md z-10 py-3 transition-all ease-in-out  duration-200 "
+            ? "fixed top-0 left-0  w-full bg-transparent backdrop-blur-md z-10 py-3 transition-all ease-in-out  duration-200 "
             : ""
         } ${
           hidden ? "opacity-0 transition-opacity duration-500" : "opacity-100"
@@ -183,7 +188,10 @@ const Header = () => {
       >
         {extraList.map((list, index) => {
           return (
-            <p className="capitalize py-4" key={index}>
+            <p
+              className="capitalize py-4 cursor-pointer  hover:text-orange-400 transition-all duration-300 ease-in-out"
+              key={index}
+            >
               {index === extraList.length - 3 ? (
                 <span className="text-orange-400">{list.name}</span>
               ) : (
