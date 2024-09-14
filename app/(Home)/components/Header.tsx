@@ -3,12 +3,14 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
+import NavMobile from "./NavMobile";
 const Header = () => {
   // const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
   // const [active, setActive] = useState(false);
   const [fixed, setFixed] = useState(false);
   const [hidden, setHidden] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -98,30 +100,54 @@ const Header = () => {
     <>
       {" "}
       <header className="border-b-zinc-300 border-b-[2px]  overflow-hidden">
-        <div className="py-2 px-6">
-          <div className="flex items-center gap-8">
+        <div className="py-2 px-6   ">
+          <div className="flex items-center gap-6 lg:gap-8 xl:gap-10">
             {" "}
-            <div className="flex items-center">
-              <Image
-                className="mt-2"
-                src="logo.svg"
-                width={40}
-                height={40}
-                alt="logo"
-              />
-              <Image
-                className="-m-2 "
-                src="logo2.svg"
-                width={40}
-                height={40}
-                alt="logo"
-              />
+            <div className="flex items-center ">
+              {open ? (
+                <>
+                  {" "}
+                  <Image
+                    className="z-50 mt-2 relative  lg:static "
+                    src="logo11.svg"
+                    width={40}
+                    height={40}
+                    alt="logo"
+                  />
+                  <Image
+                    className=" z-50 -m-2 relative   lg:static"
+                    src="logo22.svg"
+                    width={40}
+                    height={40}
+                    alt="logo"
+                  />
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <Image
+                    className="z-50 mt-2 relative    lg:static  "
+                    src="logo.svg"
+                    width={40}
+                    height={40}
+                    alt="logo"
+                  />
+                  <Image
+                    className=" z-50 -m-2 relative lg:static"
+                    src="logo2.svg"
+                    width={40}
+                    height={40}
+                    alt="logo"
+                  />
+                </>
+              )}
             </div>
+            <NavMobile open={open} setOpen={setOpen} />
             <Navbar
               onShow={show}
               setShow={setShow}
-              containerStyle="flex items-center gap-8 "
-              linkStyle="capitalize font-semibold text-lg cursor-pointer hover:text-orange-400 transition-all duration-300 ease-in-out"
+              containerStyle="lg:flex lg:items-center  lg:gap-4 xl:gap-6 hidden w-[85vw]  "
+              linkStyle="capitalize  font-semibold md:text-base  lg:text-lg cursor-pointer hover:text-orange-400 transition-all duration-300 ease-in-out"
             />
           </div>
         </div>
