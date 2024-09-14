@@ -146,7 +146,7 @@ const Header = () => {
             <Navbar
               onShow={show}
               setShow={setShow}
-              containerStyle="lg:flex lg:items-center   lg:gap-4 xl:gap-6 hidden w-[86vw] "
+              containerStyle="lg:flex lg:items-center  lg:gap-4 xl:gap-6 hidden w-[85vw]  "
               linkStyle="capitalize  font-semibold md:text-base  lg:text-lg cursor-pointer hover:text-orange-400 transition-all duration-300 ease-in-out"
             />
           </div>
