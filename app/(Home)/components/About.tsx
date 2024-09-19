@@ -11,7 +11,7 @@ const About = () => {
           Making music isn’t easy. It takes time, effort, and learning. But when
           you’re in the flow, it’s incredibly rewarding.
         </div>
-        <p className="text-sm tracking-wide     lg:text-base font-medium leading-relaxed ">
+        <p className="text-sm tracking-wide lg:text-base font-medium leading-relaxed ">
           We feel the same way about making Soundz products. The driving force
           behind Soundz is our passion for what we make, and the people we make
           it for.
@@ -39,11 +39,11 @@ const About = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 h-[150vh] mt-28">
-        <div className="bg-[#B6FFC0] flex flex-col gap-16 items-center justify-center ">
+      <div className="grid lg:grid-cols-2 grid-cols-[2fr_1fr] lg:h-[150vh] h-[50vh] lg:mt-28 mt-10">
+        <div className="bg-[#B6FFC0]  flex flex-col gap-16 items-center justify-center ">
           <div className="flex flex-col gap-20">
             <Image
-              className="rounded-lg"
+              className="rounded-lg hidden lg:block"
               src="/images/stuff.jpg"
               width={600}
               height={400}
@@ -51,10 +51,26 @@ const About = () => {
             />
 
             <Image
-              className="rounded-lg"
+              className="rounded-lg  block lg:hidden"
+              src="/images/stuff.jpg"
+              width={200}
+              height={200}
+              alt="image"
+            />
+
+            <Image
+              className="rounded-lg  hidden lg:block"
               src="/images/heroo.png"
               width={600}
               height={400}
+              alt="image"
+            />
+
+            <Image
+              className="rounded-lg  block lg:hidden"
+              src="/images/heroo.png"
+              width={200}
+              height={200}
               alt="image"
             />
           </div>
@@ -64,7 +80,7 @@ const About = () => {
         </div>
         <div className="flex items-center justify-between ">
           <Image
-            className=" relative right-10 h-[650px] rounded-lg"
+            className=" relative lg:right-10 right-5 lg:h-[650px] h-[250px] rounded-lg object-fill"
             src="/images/shout.jpg"
             alt="shout"
             width={600}
