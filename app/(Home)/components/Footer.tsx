@@ -5,17 +5,17 @@ const Footer = () => {
   return (
     <footer className="pb-3">
       <div className="border-[1px] border-b-zinc-300 mt-6"></div>
-      <div className="w-[90vw] mx-auto mt-14">
-        <div className=" grid grid-rows-3  ">
-          <div className="">
-            <h1 className="capitalize text-4xl font-semibold w-36   ">
+      <div className="w-[90vw] mx-auto lg:mt-14 mt-12">
+        <div className=" grid lg:grid-rows-3 grid-cols-1  ">
+          <div className="mb-16 lg:mb-0">
+            <h1 className="capitalize text-5xl font-semibold lg:text-4xl lg:font-semibold lg:w-36   ">
               soundz
             </h1>
           </div>
 
-          <div className="grid grid-cols-3 -mt-9">
-            <div>
-              <ul className="capitalize font-medium">
+          <div className="lg:grid lg:grid-cols-3 flex flex-col-reverse text-sm lg:text-base  -mt-9">
+            <div className="mt-2 mb-2 lg:m-0 order-9 lg:order-none ">
+              <ul className="capitalize font-medium  ">
                 <li>register live or push</li>
                 <li>about soundz</li>
                 <li>jobs</li>
@@ -29,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className=" order-8 lg:order-none mt-2 mb-2 lg:m-0">
               <h1 className="capitalize font-semibold">education</h1>
               <ul className="">
                 <li>Offers for Students and teachers </li>
@@ -38,18 +38,18 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="order-10  lg:order-none mt-2 mb-2 lg:m-0">
               <h1 className="capitalize font-semibold">
                 Sign up to our newsletter
               </h1>
-              <p className="text-base font-medium">
+              <p className=" font-medium">
                 Enter your email address to stay up to date with the latest
                 offers, tutorials, downloads, surveys and more.
               </p>
-              <div className="mt-4">
+              <div className="mt-4 ">
                 {" "}
                 <input
-                  className="bg-zinc-100 p-3 w-[22vw]"
+                  className="bg-zinc-100 p-3 lg:w-[22vw] w-[71vw]"
                   type="text"
                   placeholder="Email Address"
                 />
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div>
+            <div className="order-7 lg:order-none mt-2 mb-2 lg:m-0">
               <h1 className="capitalize font-semibold">community</h1>
               <ul>
                 <li>Find Soundz user Groups</li>
@@ -68,15 +68,15 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className=" order-4 lg:order-none flex flex-col lg:gap-3 gap-2 mt-2 pb-4 lg:m-0 lg:p-0">
               <div>
                 <h1 className="font-semibold">Language and Location</h1>
               </div>
-              <div className="w-[30vw] flex space-x-6">
-                <div>
+              <div className="lg:w-[30vw]  flex lg:space-x-6 space-x-3">
+                <div className="">
                   {" "}
                   <select
-                    className="w-full bg-zinc-100 rounded-lg p-1"
+                    className="w-[30vw] lg:w-full bg-zinc-100 rounded-lg p-1"
                     title="select"
                   >
                     <option>English</option>
@@ -88,7 +88,7 @@ const Footer = () => {
 
                 <div>
                   <select
-                    className="w-[15vw] bg-zinc-100 rounded-lg p-1"
+                    className="lg:w-[15vw] w-[50vw] bg-zinc-100 rounded-lg p-1"
                     title="select"
                   >
                     <option>Nigeria</option>
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between px-10 text-zinc-600   ">
+      <div className="flex items-center justify-between lg:px-10 px-4 text-zinc-600 text-xs pt-5 lg:pt-0   ">
         <h1>
           Development by{" "}
           <span className="underline underline-offset-2 cursor-pointer  transform">

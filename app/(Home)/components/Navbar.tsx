@@ -29,7 +29,7 @@ function Navbar({ containerStyle, linkStyle, onShow, setShow }: Props) {
 
   return (
     <section>
-      <nav className={`${containerStyle} w-full flex-nowrap`}>
+      <nav className={`${containerStyle} flex-nowrap`}>
         <>
           {" "}
           {navRoutes.map((route, index) => {
