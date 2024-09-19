@@ -1,7 +1,7 @@
 export function Video() {
   return (
     <video
-      className="w-[90vw] h-[600px] object-fill rounded-xl"
+      className="w-[90vw] h-[300px]   lg:w-[90vw] lg:h-[600px] object-fill rounded-xl"
       controls
       preload="auto"
     >

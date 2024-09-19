@@ -6,29 +6,29 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className=" overflow-hidden">
-      <div className="container w-[52vw] mx-auto flex flex-col gap-3 mb-28">
-        <div className="text-2xl tracking wider font-semibold  leading-relaxed ">
+      <div className="container lg:w-[52vw] w-[80vw]  mx-auto flex flex-col gap-3 lg:mb-28 mb-10">
+        <div className=" text-base tracking-wide  lg:text-2xl lg:tracking wider font-semibold  leading-relaxed ">
           Making music isn’t easy. It takes time, effort, and learning. But when
           you’re in the flow, it’s incredibly rewarding.
         </div>
-        <p className="text-base font-medium leading-relaxed ">
+        <p className="text-sm tracking-wide     lg:text-base font-medium leading-relaxed ">
           We feel the same way about making Soundz products. The driving force
           behind Soundz is our passion for what we make, and the people we make
           it for.
         </p>
       </div>
 
-      <div className="flex items-center justify-center w-[100vw]">
+      <div className="flex items-center justify-center px-2 lg:px-0 ">
         <Video />
       </div>
 
-      <div className="container w-[52vw] mx-auto flex flex-col gap-3 mt-28">
-        <div className="text-2xl tracking wider font-demibold leading-relaxed">
+      <div className="container lg:w-[52vw] w-[80vw] mx-auto flex flex-col gap-3 lg:mt-28 mt-10">
+        <div className=" text-sm tracking-wide   lg:text-2xl tracking wider font-semibold leading-relaxed">
           We are more than 350 people from 30 different countries divided
           between our headquarters in Berlin and our offices in Los Angeles and
           Tokyo.
         </div>
-        <p className="text-base font-medium leading-relaxed">
+        <p className="text-sm  lg:text-base tracking-wide  font-medium leading-relaxed">
           Most of us are active musicians, producers, and DJs, and many of us
           use Live and Push every day. We come from a wide range of cultural and
           professional backgrounds. Some of us have PhDs, some are self-taught,
@@ -43,7 +43,7 @@ const About = () => {
         <div className="bg-[#B6FFC0] flex flex-col gap-16 items-center justify-center ">
           <div className="flex flex-col gap-20">
             <Image
-             className="rounded-lg"
+              className="rounded-lg"
               src="/images/stuff.jpg"
               width={600}
               height={400}
@@ -51,7 +51,7 @@ const About = () => {
             />
 
             <Image
-             className="rounded-lg"
+              className="rounded-lg"
               src="/images/heroo.png"
               width={600}
               height={400}

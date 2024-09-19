@@ -152,7 +152,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div onClick={() => setShow(!show)}>
+        <div className="hidden lg:block" onClick={() => setShow(!show)}>
           {show && (
             <>
               {" "}

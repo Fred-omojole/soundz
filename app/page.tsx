@@ -8,7 +8,7 @@ import Product from "./(Home)/components/Product";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-hidden">
       <Header />
       <Hero />
       <About />
