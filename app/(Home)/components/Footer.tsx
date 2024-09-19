@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-between lg:px-10 px-4 text-zinc-600 text-xs pt-5 lg:pt-0   ">
+      <div className="flex items-center justify-between lg:px-10 px-4 text-zinc-600 text-xs lg:text-base pt-5 lg:pt-0   ">
         <h1>
           Development by{" "}
           <span className="underline underline-offset-2 cursor-pointer  transform">
