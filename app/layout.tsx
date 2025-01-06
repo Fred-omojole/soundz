@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "WSoundz by Freddy.dev | Music Tech Platform",
+  title: "Soundz by Freddy.dev | Music Tech Platform",
   description:
     "Explore Soundz, a cutting-edge platform by Freddy.dev, dedicated to revolutionizing music technology and enhancing your audio experience.",
   icons: {
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
-      "Webify empowers businesses with seamless web solutions, delivering intuitive designs, responsive layouts, and tailored experiences across every page.",
-    url: "https://soundz-2qkbsv566-fred-omojoles-projects.vercel.app/",
-    siteName: "soundz-2qkbsv566-fred-omojoles-projects.vercel.app",
+      "Discover Soundz by Freddy.dev, the ultimate music tech platform delivering innovation and seamless audio solutions.",
+    url: "https://soundz-five.vercel.app/",
+    siteName: "soundz-five.vercel.app",
     images: [
       {
         url: "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
