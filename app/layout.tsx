@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
         width: 1200,
         height: 630,
-        alt: "Webify — Entertainment Web App",
+        alt: "Soundz by Freddy.dev Open Graph Image",
       },
     ],
     locale: "en-US",
