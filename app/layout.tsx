@@ -7,16 +7,6 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 export const metadata: Metadata = {
   title: "WSoundz by Freddy.dev | Music Tech Platform",
   description:
@@ -32,8 +22,8 @@ export const metadata: Metadata = {
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
       "Webify empowers businesses with seamless web solutions, delivering intuitive designs, responsive layouts, and tailored experiences across every page.",
-    url: "https://weblix-snowy.vercel.app/",
-    siteName: "weblix-snowy.vercel.app",
+    url: "https://soundz-2qkbsv566-fred-omojoles-projects.vercel.app/",
+    siteName: "soundz-2qkbsv566-fred-omojoles-projects.vercel.app",
     images: [
       {
         url: "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
