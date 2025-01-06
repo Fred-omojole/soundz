@@ -18,40 +18,58 @@ const poppins = Poppins({
 //   weight: "100 900",
 // });
 export const metadata: Metadata = {
-  title: "Soundz by Freddy.dev | Music Tech Platform",
+  title: "WSoundz by Freddy.dev | Music Tech Platform",
   description:
     "Explore Soundz, a cutting-edge platform by Freddy.dev, dedicated to revolutionizing music technology and enhancing your audio experience.",
   icons: {
     icon: ["/logot.png?v=4"],
     shortcut: ["/logot.png"],
-    apple: ["/logot.png"],
   },
+
+  generator: "Next.js",
+  colorScheme: "light",
   openGraph: {
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
-      "Discover Soundz by Freddy.dev, the ultimate music tech platform delivering innovation and seamless audio solutions.",
-    url: "https://soundz-five.vercel.app",
-    siteName: "Soundz by Freddy.dev",
+      "Webify empowers businesses with seamless web solutions, delivering intuitive designs, responsive layouts, and tailored experiences across every page.",
+    url: "https://weblix-snowy.vercel.app/",
+    siteName: "weblix-snowy.vercel.app",
     images: [
       {
-        url: "/imgaes/william.png", // (recommended dimensions: 1200x630)
+        url: "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
         width: 1200,
         height: 630,
-        alt: "Soundz by Freddy.dev Open Graph Image",
+        alt: "Webify — Entertainment Web App",
       },
     ],
-    locale: "en_US",
+    locale: "en-US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image", // Optimized card type for Twitter
+    card: "summary_large_image",
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
-      "Revolutionizing music technology with Soundz, your go-to platform for modern audio innovation.",
-    images: ["/images/william.png"], // Ensure this matches the Open Graph image
+      "Discover Soundz by Freddy.dev, the ultimate music tech platform delivering innovation and seamless audio solutions.",
+    creator: "yele — Frontend dev",
+    creatorId: "omoyele60762",
+    images: [
+      "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
+    ],
   },
-  viewport: "width=device-width, initial-scale=1", // Essential for responsive design
-  themeColor: "#000000", // Sets the browser theme color for mobile
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "technology",
 };
 
 export default function RootLayout({
