@@ -44,14 +44,12 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image", // Optimized card type for Twitter
+    card: "summary_large_image",
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
       "Revolutionizing music technology with Soundz, your go-to platform for modern audio innovation.",
-    images: ["/images/william.png"], // Ensure this matches the Open Graph image
+    images: ["/images/william.png"],
   },
-  viewport: "width=device-width, initial-scale=1", // Essential for responsive design
-  themeColor: "#000000", // Sets the browser theme color for mobile
 };
 
 export default function RootLayout({
