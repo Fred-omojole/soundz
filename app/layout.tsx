@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Soundz by Freddy.dev",
     images: [
       {
-        url: "/imgaes/william.png", // (recommended dimensions: 1200x630)
+        url: "/imgaes/william.png",
         width: 1200,
         height: 630,
         alt: "Soundz by Freddy.dev Open Graph Image",
