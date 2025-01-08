@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   icons: {
     icon: ["/logot.png?v=4"],
     shortcut: ["/logot.png"],
-    apple: ["/logot.png"],
   },
   openGraph: {
     title: "Soundz by Freddy.dev | Music Tech Platform",
