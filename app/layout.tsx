@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Soundz by Freddy.dev",
     images: [
       {
-        url: "/imgaes/william.png",
+        url: "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
         width: 1200,
         height: 630,
         alt: "Soundz by Freddy.dev Open Graph Image",
@@ -47,7 +47,9 @@ export const metadata: Metadata = {
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
       "Revolutionizing music technology with Soundz, your go-to platform for modern audio innovation.",
-    images: ["/images/william.png"],
+    images: [
+      "https://github.com/Fred-omojole/soundz/blob/master/public/images/william.png?raw=true",
+    ],
   },
 };
 
