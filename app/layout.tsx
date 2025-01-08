@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Soundz by Freddy.dev | Music Tech Platform",
     description:
       "Discover Soundz by Freddy.dev, the ultimate music tech platform delivering innovation and seamless audio solutions.",
-    url: "https://soundz-five.vercel.app",
+    url: "https://soundz-a8qz3q02a-fred-omojoles-projects.vercel.app/",
     siteName: "Soundz by Freddy.dev",
     images: [
       {
